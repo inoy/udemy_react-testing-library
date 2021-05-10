@@ -18,3 +18,11 @@
     "test": "react-scripts test --env=jsdom --verbose",
   },
 ```
+
+## モック
+
+[GitHub - Mock Service Worker](https://github.com/mswjs/msw) が Testing Library の推奨。
+
+以下は [Testing Library - Example](https://testing-library.com/docs/react-testing-library/example-intro/#full-example) より引用。
+
+> We recommend using Mock Service Worker library to declaratively mock API communication in your tests instead of stubbing window.fetch, or relying on third-party adapters.
