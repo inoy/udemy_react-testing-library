@@ -11,7 +11,7 @@ const RenderInput = ({ outputConsole }) => {
     }
   };
   return (
-    <div>
+    <>
       <input
         type="text"
         placeholder="Enter"
@@ -19,7 +19,7 @@ const RenderInput = ({ outputConsole }) => {
         onChange={updateValue}
       />
       <button onClick={outputValue}>Console</button>
-    </div>
+    </>
   );
 };
 
