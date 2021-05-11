@@ -57,17 +57,17 @@ export const customCounterSlice = createSlice({
           break;
       }
     },
-    extraReducers: (builder) => {
-      builder.addCase(fetchDummy.fulfilled, (state, action) => {
-        state.value = 100 + action.payload;
-      });
-      builder.addCase(fetchDummy.rejected, (state, action) => {
-        state.value = 100 + action.payload;
-      });
-      builder.addCase(fetchJson.fulfilled, (state, action) => {
-        state.username = action.payload;
-      });
-    },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchDummy.fulfilled, (state, action) => {
+      state.value = 100 + action.payload;
+    });
+    builder.addCase(fetchDummy.rejected, (state, action) => {
+      state.value = 100 - action.payload;
+    });
+    builder.addCase(fetchJson.fulfilled, (state, action) => {
+      state.username = action.payload;
+    });
   },
 });
 

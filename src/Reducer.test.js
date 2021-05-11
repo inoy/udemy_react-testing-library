@@ -1,7 +1,7 @@
 import reducer, {
   increment,
   incrementByAmount,
-} from "../src/features/counter/customCounter/customCounterSlice";
+} from "./features/customCounter/customCounterSlice";
 
 describe("ReduxTookKitのReducer", () => {
   describe("アクション: increment", () => {
